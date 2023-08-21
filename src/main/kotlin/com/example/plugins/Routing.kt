@@ -7,5 +7,8 @@ import io.ktor.server.routing.*
 
 fun Application.configureRouting() {
     routing {
+        static ("/static"){
+            resources("files")
+        }
     }
 }
